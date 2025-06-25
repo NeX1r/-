@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ХНЛ Правила</title>
+  <style>
+    @font-face {
+      font-family: 'HomeVideo';
+      src: url('HomeVideo-Regular.otf') format('opentype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'HomeVideo', sans-serif;
+      background: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      padding: 40px 20px;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('bg.png') no-repeat center center fixed;
+      background-size: cover;
+      filter: brightness(30%);
+      z-index: -3;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -2;
+    }
+
+    section.rules {
+      max-width: 900px;
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 2px solid #111;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    section.rules h2 {
+      font-size: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 25px;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    ol.rule-list {
+      padding-left: 20px;
+    }
+
+    ol.rule-list li {
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      section.rules h2 {
+        font-size: 28px;
+      }
+      ol.rule-list li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="rules">
+    <h2>Правила</h2>
+    <ol class="rule-list">
+      <li>Реклама чего-либо в любом виде.</li>
+      <li>Отправка NSFW и NSFL контента.</li>
+      <li>Спам и флуд.</li>
+      <li>Попрошайничество (подарки, обмен и т.д.).</li>
+      <li>Игры на деньги (реальные и виртуальные).</li>
+      <li>Распространение личной информации, шантаж.</li>
+      <li>Обход ограничений (твинк-аккаунты, чужие аккаунты).</li>
+      <li>Разжигание межнациональной ненависти, провокации.</li>
+      <li>Отметки администрации без причин.</li>
+      <li>Оскорбления администрации, разработчиков, редакторов.</li>
+      <li>Клонирование чужого профиля (мут до смены профиля).</li>
+      <li>Разжигание личных ссор и переход на личности.</li>
+      <li>Обсуждение политики.</li>
+      <li>Оскорбления родственников, агрессивное поведение.</li>
+      <li>Продажа / Покупка / Обмен чего-либо.</li>
+    </ol>
+  </section>
+
+  <div class="overlay"></div>
+</body>
+</html>
